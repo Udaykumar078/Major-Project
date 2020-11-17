@@ -100,18 +100,28 @@ class Pilot
 	{
 		System.out.println("************************************************");
 		System.out.println("Program to demonstrate pattern Matching");
+		System.out.println();
+		System.out.println("List of Trader ids who won the auction");
 		int[] arr={4,1,5,2,3,1,2,3,5,1,4,2,1,3,5,2};
 		twod_set=new HashSet<List<Integer>>();
 		//Winner Trader Ids of an auction sorted according to time
 		win_str=new int[arr.length];
 		for(int i=0;i<arr.length;i++){
 			win_str[i]=arr[i];
+			System.out.print(arr[i]+" ");
 		}
+		System.out.println();
+		System.out.println();
 		//size of win_str
 		size_win_str=win_str.length;
 		//list of traders who get nearly equal profits on a periodic basis
+		System.out.println("List of trader ids whose profits are nearly equal");
 		int[] prof_list={1,2,3,5};
 		//min no.of traders in a cartel
+		for(int i=0;i<prof_list.length;i++)
+			System.out.print(prof_list[i]);
+		System.out.println();
+		System.out.println();
 		int min_trad=3;
 		//ma no.of traders in cartel = size of prof_list
 		int max_trad=prof_list.length;
@@ -120,11 +130,7 @@ class Pilot
 		for(int i=min_trad;i<=max_trad;i++){
 			heapPermutation(prof_list,size_of_prof_list,i);
 		}
+		System.out.println("List of cartels :");
 		System.out.println(twod_set);
 	}
 }
-
-
-
-
-
