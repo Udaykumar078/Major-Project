@@ -119,7 +119,7 @@ class Pilot
 		int[] prof_list={1,2,3,5};
 		//min no.of traders in a cartel
 		for(int i=0;i<prof_list.length;i++)
-			System.out.print(prof_list[i]);
+			System.out.print(prof_list[i]+" ");
 		System.out.println();
 		System.out.println();
 		int min_trad=3;
